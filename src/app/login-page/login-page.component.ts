@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
+  model : any={};        
+  errorMessage:string;
+
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {    
+    sessionStorage.removeItem('UserName');    
+    sessionStorage.clear();    
+  }    
+  login(){    
+    
+  }; 
 
 }
